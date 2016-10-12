@@ -8,3 +8,6 @@ set(SOURCE_FILES main.cpp ${LIBRARY_FILES})
 
 add_executable(Console_Debug ${SOURCE_FILES})
 add_library(Console STATIC ${LIBRARY_FILES})
+
+target_link_libraries(Console_Debug String)
+target_link_libraries(Console String)
